@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Shuozhi Xu | Software</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="wrapper">
+	<div id="page">
+		<div id="page-bgtop">
+			<div id="page-bgbtm">
+				<div id="content">
+					<div class="post">
+						<h2>Concurrent atomistic-continuum (CAC) simulation environment</h2>
+						<div class="entry">
+                            <p><a href="http://www.pycac.org">PyCAC</a></p>
+						</div>
+						<h2>LAMMPS dump file extractor</h2>
+						<div class="entry">
+							<p>From a large LAMMPS dump file, <a href="software/dump/dump.cac">dump.cac</a>, <a href="software/dump/dump_extract.f90">this program</a> extracts some atoms whose ids are stored in <a href="software/dump/group_atomap.id">group_atomap.id</a>, and then outputs these atoms to a smaller LAMMPS dump file, <a href="software/dump/dump.group">dump.group</a>, with updated boundaries.</p>
+                            <p>To compile the program: <code>gfortran -o dump_extract dump_extract.f90</code></p>
+                            <p>Then to run the program: <code>./dump_extract</code>, which then creats the output file.</p>
+                            <p>If you use this program in your published work, please cite:<br>Shuozhi Xu, Liming Xiong, Qian Deng, David L. McDowell, <a href="http://dx.doi.org/10.1016/j.ijsolstr.2016.03.030"><i>Mesh refinement schemes for the concurrent atomistic-continuum method</i></a>, Int. J. Solids Struct. 90 (2016) 144--152</p>
+                        </div>
+						<h2>Elastic moduli of a cubic system</h2>
+						<div class="entry">
+							<p>Given three elastic constants <i>C</i><sub>11</sub>, <i>C</i><sub>12</sub>, and <i>C</i><sub>44</sub> of a cubic system, directions <i>l</i>, <i>n</i>, and <i>m</i>, as well as plane normal <i>i</i>, <i>j</i>, and <i>k</i>, <a href="software/moduli/moduli_cubic.f90">this program</a> calculates Young's modulus and shear modulus of the rotated system.</p>
+                            <p>To compile the program: <code>gfortran -o moduli_cubic moduli_cubic.f90</code></p>
+                            <p>Then to run the program: <code>./moduli_cubic</code>, which then prompts for input parameters.</p>
+                            <p>If you use this program in your published work, please cite:<br>Shuozhi Xu, Liming Xiong, Youping Chen, David L. McDowell, <a href="http://dx.doi.org/10.1016/j.jmps.2016.08.002"><i>An analysis of key characteristics of the Frank-Read source process in FCC metals</i></a>, J. Mech. Phys. Solids 96 (2016) 460--476</p>
+						</div>
+                        <h2>Elastic tensor</h2>
+                        <div class="entry">
+                            <p><a href="software/elastic/elastic_tensor.c">This program</a> transforms a stiffness tensor for a given coordinate system to a stiffness tensor and a compliance tensor for another coordinate system. It requires an input file, <a href="software/elastic/elas.in">elas.in</a>, in the same directory.</p>
+                            <p>The first line of elas.in is an integer, which can be 0, 1, 2, or 3. When it is 0, elastic anisotropy is assumed. When it is 1, elastic isotropy in Voigt form is assumed. When it is 2, elastic isotropy in Reuss form. When it is 3, elastic isotropy in Hill form is assumed.</p>
+                            <p>Each of the next three lines of elas.in contains three real numbers. The first, second, and third line, respectively, corresponds to the crystallographic orientations of the <i>x</i>, <i>y</i>, and <i>z</i> axis of the coordinate system based on which the input stiffness tensor is calculated, e.g.,<br>
+                                <code>1. 1. -2.<br>
+                                -1. 1. 0.<br>
+                                1. 1. 1.</code></p>
+                            <p>The next six lines of elas.in contain 21 real numbers which are components of the input stiffness tensor, i.e,<br>
+                            <code><i>C</i><sub>11</sub><br>
+                            <i>C</i><sub>12</sub> <i>C</i><sub>22</sub><br>
+                            <i>C</i><sub>13</sub> <i>C</i><sub>23</sub> <i>C</i><sub>33</sub><br>
+                            <i>C</i><sub>14</sub> <i>C</i><sub>24</sub> <i>C</i><sub>34</sub> <i>C</i><sub>44</sub><br>
+                            <i>C</i><sub>15</sub> <i>C</i><sub>25</sub> <i>C</i><sub>35</sub> <i>C</i><sub>45</sub> <i>C</i><sub>55</sub><br>
+                            <i>C</i><sub>16</sub> <i>C</i><sub>26</sub> <i>C</i><sub>36</sub> <i>C</i><sub>46</sub> <i>C</i><sub>56</sub> <i>C</i><sub>66</sub></code>
+                            </p>
+                            <p>Each of the next three lines of elas.in contains three real numbers. The first, second, and third line, respectively, corresponds to the crystallographic orientations of the <i>x</i>, <i>y</i>, and <i>z</i> axis of the coordinate system based on which the output stiffness and compliance tensors are calculated, e.g.,<br>
+                                <code>1. 0. 0.<br>
+                                0. 1. 0.<br>
+                                0. 0. 1.</code></p>
+                            <p>To compile the program: <code>gcc elastic_tensor.c -o elastic_tensor -lm</code></p>
+                            <p>Then to run the program: <code>./elastic_tensor</code>, which creates an output file, <a href="software/elastic/elas.out">elas.out</a>. The file elas.out contains a stiffness tensor, which is Equation 9 of <a href="http://dx.doi.org/10.1016/j.intermet.2020.106844">a paper in Intermetallics</a>, and a compliance tensor.</p>
+                            <p>If you use this program in your published work, please cite:<br>Shuozhi Xu, Yanqing Su, Irene J. Beyerlein, <a href="http://dx.doi.org/10.1016/j.mechmat.2019.103200"><i>Modeling dislocations with arbitrary character angle in face-centered cubic transition metals using the phase-field dislocation dynamics method with full anisotropic elasticity</i></a>, Mech. Mater. 139 (2019) 103200</p>
+                        </div>
+					</div>
+				</div>
+				<!-- end #content -->
+				<div id="sidebar">
+					<div id="logo">
+					</div>
+					<div id="menu">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="research.html">Research</a></li>
+							<li><a href="presentations.html">Presentations</a></li>
+                            <li><a href="teaching.html">Teaching</a></li>
+                            <li><a href="mentoring.html">Mentoring</a></li>
+							<li class="current_page_item"><a href="software.html">Software</a></li>
+							<li><a href="events.html">Events</a></li>
+							<li><a href="photos.html">Photos</a></li>                        
+						</ul>
+					</div>
+				</div>
+				<!-- end #sidebar -->
+			</div>
+		</div>
+	</div>
+	<!-- end #page -->
+</div>
+<div id="footer">
+	<p>&copy; Shuozhi Xu. All rights reserved</p>
+</div>
+<!-- end #footer -->
+</body>
+</html>
