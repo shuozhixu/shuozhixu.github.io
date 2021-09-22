@@ -8,8 +8,8 @@ Released for free under a Creative Commons Attribution 3.0 License
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
 
 body {
-	margin: 0px 0px 0px 0px auto;
-	padding: 0px auto;
+	margin: 0 auto;
+	padding: 0 auto;
 	background: url(images/img01.jpg) repeat;
 	font-family: 'Ubuntu', serif;
 	font-size: 12pt;
@@ -211,7 +211,7 @@ html{font-size:100%;}
 /* Page */
 
 #page {
-	width: 0px;
+	width: 1500px;
 	margin: 0 auto;
 }
 
