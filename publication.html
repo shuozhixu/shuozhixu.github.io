@@ -21,9 +21,14 @@
                                     <th>Submitted</th>
                                 </tr>
                                 <tr>
+                                    <td><a href="#ml">Machine learning</a></td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
                                     <td><a href="#pf">Phase-field modeling</a></td>
                                     <td>11</td>
-                                    <td>1</td>
+                                    <td>0</td>
                                 </tr>
                                 <tr>
                                     <td><a href="#cg-atom">Coarse-grained atomistic modeling</a></td>
@@ -67,10 +72,22 @@
                                 </tr>
                             </table>
                         </div>
-                        <h2><a id="pf"></a>Phase-field modeling</h2>
+                        <h3><a id="ml"></a>Machine learning</h3>
+                        <div class="entry">
+                            <p>A machine learning-based moment tensor potential is developed for the MoNbTaTi system [1].</p>
+                            <h4>Publication</h4>
+                            <ol reversed type="1">
+                                <li>Hui Zheng, Lauren T.W. Fey, Xiang-Guo Li, Yong-Jie Hu, Liang Qi, Chi Chen, <b>Shuozhi Xu</b>, Irene J. Beyerlein, Shyue Ping Ong, <i>Multi-scale investigation of chemical short range order and dislocation glide in the MoNbTi and TaNbTi refractory multi-principal element alloys</i>, npj Comput. Mater. (revision submitted)</li>
+                            </ol>
+                            <h4>Collaborator</h4>
+                            <ul>
+                                <li><a href="https://labs.me.ucsb.edu/beyerlein/irene">Prof. Shyue Ping Ong</a>, University of California, San Diego</li>
+                            </ul>
+                        </div>
+                        <h3><a id="pf"></a>Phase-field modeling</h3>
                         <div class="entry">
                             <p>Phase-field-based methods are employed to study the static dislocation cores in Ag [4], Al [1,2,5], Au [1,4], Be [8], Cd [8], Co [8], Cu [4], Hf [8], Ir [4], Mg [8], Ni [4], Pd [4], Pt [4], Ti [8], Re [8], Rh [4], Y [8], Zn [8], Zr [8], and CoNiRu [3]. Also studied are dislocation multiplication from Frank-Read sources in Cr [6], Mo [6], Nb [6], Ta [6], V [6], W [6], and MoNbTi [7,10], dislocation propagation in MoNbTi [10,12], dislocation loop expansion in MoNbTi and NbTaTi [12], dislocation/interface interactions in Cu [11], and dislocation/obsatcle interactions in Cu and Nb [9,11].</p>
-                            <h3>Publications</h3>
+                            <h4>Publications</h4>
                             <ol reversed type="1">
                                 <li>Hui Zheng, Lauren T.W. Fey, Xiang-Guo Li, Yong-Jie Hu, Liang Qi, Chi Chen, <b>Shuozhi Xu</b>, Irene J. Beyerlein, Shyue Ping Ong, <i>Multi-scale investigation of chemical short range order and dislocation glide in the MoNbTi and TaNbTi refractory multi-principal element alloys</i>, npj Comput. Mater. (revision submitted)</li>
                                 <li><b>Shuozhi Xu</b>, Justin Y. Cheng, Nathan A. Mara, Irene J. Beyerlein, <i>Dislocation dynamics in heterogeneous nanostructured materials</i>, J. Mech. Phys. Solids (in press)</li>
@@ -85,7 +102,7 @@
                                 <li><b>Shuozhi Xu</b>, Lauren Smith, Jaber R. Mianroodi, Abigail Hunter, Bob Svendsen, Irene J. Beyerlein, <a href="http://dx.doi.org/10.1088/1361-651X/ab2d16"><i>A comparison of different continuum approaches in modeling mixed-type dislocations in Al</i></a>, Modelling Simul. Mater. Sci. Eng. 27 (2019) 074004 [<a href="publications/pfdd/xu_pfdd.mixed.al_msmse.2019.pdf">PDF</a>]</li>
                                 <li><b>Shuozhi Xu</b>, Jaber R. Mianroodi, Abigail Hunter, Irene J. Beyerlein, Bob Svendsen, <a href="http://dx.doi.org/10.1080/14786435.2019.1582850"><i>Phase-field-based calculations of the disregistry fields of static extended dislocations in FCC metals</i></a>, Philos. Mag. 99 (2019) 1400--1428 [<a href="publications/pfdd/xu_pfdd.pure.fcc_pm.2019.pdf">PDF</a>]</li>
                             </ol>
-                            <h3>Collaborators</h3>
+                            <h4>Collaborators</h4>
                             <ul>
                                 <li><a href="https://labs.me.ucsb.edu/beyerlein/irene">Prof. Irene J. Beyerlein</a>, University of California, Santa Barbara</li>
                                 <li><a href="https://scholar.google.com/citations?user=U1EIq0wAAAAJ&hl=en">Dr. Abigail Hunter</a>, Los Alamos National Laboratory</li>
@@ -93,11 +110,11 @@
                                 <li><a href="https://www.mpie.de/person/59480/3079071">Dr. Jaber R. Mianroodi</a>, Max-Planck-Institut f&uuml;r Eisenforschung GmbH</li>
                             </ul>
                         </div>
-                        <h2><a id="cg-atom"></a>Coarse-grained atomistic modeling</h2>
+                        <h3><a id="cg-atom"></a>Coarse-grained atomistic modeling</h3>
                         <div class="entry">
                             <p>Several significant advancements in the concurrent atomistic-continuum (CAC) method have been made: (i) new types of finite elements are developed which yields a more accurate stacking fault energies and core structure in coarse-grained atomistic descriptions of dislocations [2], (ii) zero temperature, quasistatic CAC approaches are formulated to enable the constrained multiscale optimization for a sequence of non-equilibrium dislocation configurations in metals [2], (iii) mesh refinement schemes for both dynamic fracture and curved dislocation migration are implemented [5], (iv) the CAC method is extended to body-centered cubic systems [13], and (v) the code efficiency is improved using parallelized object-oriented programming in a parallel code [11] and a CAC simulation environment named <a href="http://www.pycac.org">PyCAC</a> [12].</p>
                             <p>CAC simulations are performed to study multiple plasticity problems in a variety of crystals, including compression of nano/submicro-pillars in W [13] and Au [14], dynamic fractrue in Cu [5], fast moving dislocations in Cu [3], screw dislocation cross-slip in Ni [8], edge dislocation bowing out from a row of collinear obstacles in Al [6], dislocation multiplication from Frank-Read sources in Cu, Ni, and Al [7], dislocation-void interactions in Ni [1], dislocation-obstacle interactions in Al [15], dislocation-stacking fault interactions in Ni, Al, and Ag [10], misfit dislocation evolution in (111) Si/Ge interface [16], {111} Ni/Cu interface, and {111} Cu/Ag interface [17], as well as sequential slip transfer of curved dislocations across a &Sigma;3{111} coherent twin boundary in Cu, Al [4], and Ni [9], a &Sigma;11{113} symmetric tilt grain boundary in Ni [9], and a (111) semicoherent interface in Si/Ge bilayers [16].</p>
-                           <h3>Publications</h3>
+                            <h4>Publications</h4>
                             <ol reversed type="1">
                                 <li>Alex Selimov, <b>Shuozhi Xu</b>, Youping Chen, David L. McDowell, <a href="http://dx.doi.org/10.1557/s43578-021-00184-8"><i>Lattice dislocation induced misfit dislocation evolution in semi-coherent {111} bimetal interfaces</i></a>, J. Mater. Res. 36 (2021) 2763--2778 [<a href="publications/cac/selimov_bimetal.cac_jmr.2021.pdf">PDF</a>]</li>
                                 <li><b>Shuozhi Xu</b>, Yang Li, Youping Chen, <a href="http://dx.doi.org/10.1002/pssb.202000274"><i>Si/Ge (111) semicoherent interfaces: Responses to an in-plane shear and interactions with lattice dislocations</i></a>, Phys. Status Solidi (b) 257 (2020) 2000274 [<a href="publications/cac/xu_sige.cac_pssb.2020.pdf">PDF</a>]</li>
@@ -117,20 +134,20 @@
                                 <li><b>Shuozhi Xu</b>, Rui Che, Liming Xiong, Youping Chen, David L. McDowell, <a href="http://dx.doi.org/10.1016/j.ijplas.2015.05.007"><i>A quasistatic implementation of the concurrent atomistic-continuum method for FCC crystals</i></a>, Int. J. Plast. 72 (2015) 91--126 [<a href="publications/cac/xu_quasistatic.cac_ijp.2015.pdf">PDF</a>]</li>
                                 <li>Liming Xiong, <b>Shuozhi Xu</b>, David L. McDowell, Youping Chen, <a href="http://dx.doi.org/10.1016/j.ijplas.2014.08.002"><i>Concurrent atomistic–continuum simulations of dislocation-void interactions in fcc crystals</i></a>, Int. J. Plast. 65 (2015) 33--42 [<a href="publications/cac/xiong_dislocation.void.cac_ijp.2015.pdf">PDF</a>]</li>
                             </ol>
-                            <h3>Collaborators</h3>
+                            <h4>Collaborators</h4>
                             <ul>
                                 <li><a href="http://www.me.gatech.edu/faculty/mcdowell">Prof. David L. McDowell</a>, Georgia Institute of Technology</li>
                                 <li><a href="http://www2.mae.ufl.edu/chenlab">Prof. Youping Chen</a>, University of Florida</li>
                                 <li><a href="http://www.aere.iastate.edu/lmxiong">Prof. Liming Xiong</a>, Iowa State University</li>
                             </ul>
                         </div>
-                        <h2><a id="atom"></a>Atomistic simulations</h2>
+                        <h3><a id="atom"></a>Atomistic simulations</h3>
                         <div class="entry">
                             <p>In the context of nanovoids, atomistic simulations are used to study 2D nanovoid growth in Cu [4,6], Fe [5], and Mg [11], 3D nanovoid growth [1] and atomic collision cascades on void evolution [2] in V.</p>
                             <p>In the context of nanopillars/wires/tubes in pure metals, atomistic simulations are used to study deformation of single crystalline nanowires [9] and nanotubes [17], twinned [7] and nanotwinned nanopillars [12], as well as nanotwinned nanotubes [10] in W.</p>
                             <p>In the context of multi-principal element alloys (MPEAs), atomistic simulations are used to study basic structural parameters in 42 MPEAs [28], generalized stacking fault energies in MoNbTi and NbTiZr [20], local slip resistances in MoNbTi [22] and four NbTa-based MPEAs [30], critical stresses for long dislocation glide in MoNbTi and NbTiZr [32], strengths of two HfNbTaTi-based quinaries [36], as well as tension [21,35], compression [34], shock response [27,29], and melting [26] of CoCrNi.</p><!--uniaxial deformation nanowires in 16 MPEAs [32], -->
                             <p>Besides, atomistic simulations are used to study nanometric cutting [3] and melting point [8] of Si, dislocation nucleation from grain boundaries in V [13], uniaxial deformation [14] and nanoindentation [15] of 3C-SiC, dislocation walls in Cu thin films [16], grain boundary migration in Cu [18], dynamics of a dislocation and interactions between a dislocation and a void in Cu [19], interactions between a dislocation and a helium bubble in Cu [33], confined layer slips in Cu/Nb [25] and Nb [31] nanolaminates, as well as Peierls stresses in Mo [24], Nb [23,24], Ta [24], and W [24].</p>
-                            <h3>Publications</h3>
+                            <h4>Publications</h4>
                             <ol reversed type="1">
                                 <!--<li><b>Shuozhi Xu</b>, Sai Mu, Yanqing Su, <i>Uniaxial deformation of nanowires in 16 refractory multi-principal element alloys</i>, J. Alloys Compd. (under review)</li>-->
                                 <li><b>Shuozhi Xu</b>, Wu-Rong Jian, Irene J. Beyerlein, <i>Ideal simple shear strengths of two HfNbTaTi-based quinary refractory multi-principal element alloys</i>, APL Mater. (under review)</li>
@@ -170,37 +187,37 @@
                                 <li><b>S.Z. Xu</b>, Z.M. Hao, Y.Q. Su, W.J. Hu, Y. Yu, Q. Wan, <a href= "http://dx.doi.org/10.1080/10420150.2011.613393"><i>Atomic collision cascades on void evolution in vanadium</i></a>, Radiat. Eff. Def. Solids 167 (2012) 12--25 [<a href="publications/void/xu_atomic.collision.cascades_radia.eff.defects.solids.2012.pdf">PDF</a>]</li>
                                 <li><b>S.Z. Xu</b>, Z.M. Hao, Y.Q. Su, Y. Yu, Q. Wan, W.J. Hu, <a href="http://dx.doi.org/10.1016/j.commatsci.2011.03.019"><i>An analysis on nanovoid growth in body-centered cubic single crystalline vanadium</i></a>, Comput. Mater. Sci. 50 (2011) 2411--2421 [<a href="publications/void/xu_void.v_comput.mater.sci.2011.pdf">PDF</a>]</li>
                             </ol>
-                            <h3>Collaborators</h3>
+                            <h4>Collaborators</h4>
                             <ul>
                                 <li><a href="https://scholar.google.com/citations?user=vqOdWCcAAAAJ&hl=en">Dr. Saeed Zare Chavoshi</a>, Imperial College London</li>
                                 <li><a href="https://naoce.sjtu.edu.cn/teachers/10193.html">Prof. Dengke Chen</a>, Shanghai Jiao Tong Uiversity</li>
                                 <li><a href="https://yanqingsu.github.io">Prof. Yanqing Su</a>, Utah State University</li>
                             </ul>
                         </div>
-                        <h2><a id="ab-initio"></a><i>Ab initio</i> calculations</h2>
+                        <h3><a id="ab-initio"></a><i>Ab initio</i> calculations</h3>
                         <div class="entry">
                             <p>Density functional theory calculations are conducted to obtain generalized stacking fault energies in eight FCC transition metals including Ag, Au, Cu, Ir, Ni, Pd, Pt, and Rh [1], as well as basic structural parameters of Fe-based random binary alloys [2].</p>
-                            <h3>Publication</h3>
+                            <h4>Publications</h4>
                             <ol reversed type="1">
                                 <li><b>Shuozhi Xu</b>, Arjun S. Kulathuvayal, Liming Xiong, Yanqing Su, <i>Effects of ferromagnetism in ab initio calculations of basic structural parameters of of Fe-A (A = Mo, Nb, Ta, V, or W) random binary alloys</i>, Eur. Phys. J. B (revision submitted)</li> 
                                 <li>Yanqing Su, <b>Shuozhi Xu</b>, Irene J. Beyerlein, <a href="http://dx.doi.org/10.1063/1.5115282"><i>Density functional theory calculations of generalized stacking fault energy surfaces for eight face-centered cubic transition metals</i></a>, J. Appl. Phys. 126 (2019) 105112 [<a href="publications/dft/su_dft.gamma.surface_jap.2019.pdf">PDF</a>] [<a href="https://aip.scitation.org/action/showLargeCover?doi=10.1063%2Fjap.2019.126.issue-10">Cover</a>] [<a href="publications/dft/su_dft-gamma-surface_cover.png">Featured</a>]</li>
                             </ol>
-                            <h3>Collaborator</h3>
+                            <h4>Collaborator</h4>
                             <ul>
                                 <li><a href="https://yanqingsu.github.io">Prof. Yanqing Su</a>, Utah State University</li>
                             </ul>
                         </div>
-                        <h2><a id="exp"></a>Experiments</h2>
+                        <h3><a id="exp"></a>Experiments</h3>
                         <div class="entry">
                             <p>Dislocation dynamics in MoNbTi [1], Nb films on Y-stabilized Zr substrates [2], as well as structures [4] and deformatoin [3] of Cu/Nb nanolaminates with 3D interfaces are studied.</p>
-                            <h3>Publications</h3>
+                            <h4>Publications</h4>
                             <ol reversed type="1">
                                 <li>Zezhou Li, Justin Y. Cheng, Jonathan D. Poplawsky, <b>Shuozhi Xu</b>, Jon Baldwin, Irene J. Beyerlein, Nathan A. Mara, <i>Critical length scales for chemical segregation at Cu/Nb 3D interfaces by atomic probe tomography</i>, Scr. Mater. (under review)</li>
                                 <li>Justin Y. Cheng, <b>Shuozhi Xu</b>, Youxing Chen, Zezhou Li, Jon K. Baldwin, Irene J. Beyerlein, Nathan A. Mara, <a href="http://dx.doi.org/10.1021/acs.nanolett.1c04144"><i>Simultaneous high strength and deformable nanolaminates with thick biphase interfaces</i></a>, Nano Lett. 22 (2022) 1897--1904 [<a href="publications/exp/cheng_cunb_nl.2022.pdf">PDF</a>]</li>
                                 <li>C. V. Ramana, Nanthakishore Makeswaran, Vishal Zade, Debabrata Das, Susheng Tan, <b>Shuozhi Xu</b>, Irene J. Beyerlein, <a href="http://dx.doi.org/10.1021/acs.jpcc.1c08738"><i>Fabrication and characterization of high-quality epitaxial nanocolumnar niobium films with abrupt interfaces on YSZ(001)</i></a>, J. Phys. Chem. C 126 (2022) 2098--2107 [<a href="publications/exp/ramana_nb_jpcc.2022.pdf">PDF</a>] [<a href="https://pubs.acs.org/pb-assets/images/_journalCovers/jpccck/jpccck_v126i004-3.jpg?0.5654253826384559">Cover</a>]</li>
                                 <li>Fulin Wang, Glenn H. Balbus, <b>Shuozhi Xu</b>, Yanqing Su, Jungho Shin, Paul F. Rottmann, Keith E. Knipling, Jean-Charles Stinville, Leah H. Mills, Oleg N. Senkov, Irene J. Beyerlein, Tresa M. Pollock, Daniel S. Gianola, <a href="http://dx.doi.org/10.1126/science.aba3722"><i>Multiplicity of dislocation pathways in a refractory multiprincipal element alloy</i></a>, Science 370 (2020) 95--101 [<a href="publications/mpea/wang_monbti_science.2020.pdf">PDF</a>] [<a href="http://dx.doi.org/10.1126/science.abd6587">Perspective</a>]</li>
                             </ol>
-                            <h3>Collaborators</h3>
+                            <h4>Collaborators</h4>
                             <ul>
                                 <li><a href="https://materials.ucsb.edu/people/faculty/tresa-pollock">Prof. Tresa Pollock</a>, University of California, Santa Barbara</li>
                                 <li><a href="https://materials.ucsb.edu/people/faculty/daniel-s-gianola">Prof. Daniel S. Gianola</a>, University of California, Santa Barbara</li>
@@ -208,10 +225,10 @@
                                 <li><a href="https://expertise.utep.edu/profiles/rvchintalapalle">Prof. Chintalapalle V. Ramana</a>, University of Texas at El Paso</li>
                             </ul>
                         </div>
-                        <h2><a id="review"></a>Reviews</h2>
+                        <h3><a id="review"></a>Reviews</h3>
                         <div class="entry">
                             <p>Progress in CAC [1], phase-field dislocation dynamics [7], mesoscale modeling methods for metallic alloys [6], as well as applications of general multiscale modeling to dislocation, heat conduction [4], and nanoindentation/scratching [5], are reviewed. Recent experimental progresses in high temperature nanoindentation [2] and nanoscratching [3] are also summarized. </p>
-                            <h3>Publications</h3>
+                            <h4>Publications</h4>
                             <ol reversed type="1">
                                 <li><b>Shuozhi Xu</b>, <a href="http://dx.doi.org/10.1016/j.commatsci.2022.111419"><i>Recent progress in the phase-field dislocation dynamics method</i></a>, Comput. Mater. Sci. 210 (2022) 111419 [<a href="publications/review/xu_pfdd.review_cms.2022.pdf">PDF</a>] [Invited]</li>
                                 <li>Irene J. Beyerlein, <b>Shuozhi Xu</b>, Javier LLorca, Jaafar A. El-Awady, Jaber R. Mianroodi, Bob Svendsen, <a href="http://dx.doi.org/10.1557/mrs.2019.67"><i>Alloy design for mechanical properties: Conquering the length scales</i></a>, MRS Bull. 44 (2019) 257--265 [<a href="publications/review/beyerlein_alloy.review_mrs.bull.2019.pdf">PDF</a>]</li>
@@ -222,19 +239,19 @@
                                 <li><b>Shuozhi Xu</b>, Ji Rigelesaiyin, Liming Xiong, Youping Chen, David L. McDowell, <a href="http://dx.doi.org/10.1007/978-3-319-77504-3_12"><i>Generalized continua concepts in coarse-graining atomistic simulations</i></a>, in <i>Generalized Models and Non-Classical Approaches in Complex Materials 2</i> (ed: Holm Altenbach, Jo&euml;l Pouget, Martine Rousseau, Bernard Collet, Thomas Michelitsch), Springer, Cham, 2018, pp 237--260 [<a href="publications/review/xu_generalized.continua_muagin.book.2018.pdf">PDF</a>]</li>
                             </ol>
                         </div>
-                        <h2><a id="conference"></a>Conference proceedings</h2>
+                        <h3><a id="conference"></a>Conference proceedings</h3>
                         <div class="entry">
                             <p>To date, I have contributed to two conference proceedings articles, regarding atomistic simulations [1] and phase-field modeling [2], respectively.</p>
-                            <h3>Publications</h3>
+                            <h4>Publications</h4>
                             <ol reversed type="1">
                                 <li><b>S Xu</b>, J Y Cheng, N A Mara, I J Beyerlein, <i>Thick interface size effect on dislocation transmission in nanolaminates</i>, IOP Conf. Ser.: Mater. Sci. Eng. (in press)</li>
                                 <li><b>S Z Xu</b>, Z M Hao, Q Wan, <a href="http://dx.doi.org/xxx"><i>A molecular dynamics study of void interaction in copper</i></a>, IOP Conf. Ser.: Mater. Sci. Eng. 10 (2010) 012175 [<a href="publications/proceedings/xu_void.cu_wccm.2010.pdf">PDF</a>]</li>
                             </ol>
                         </div>
-                        <h2><a id="editorial"></a>Editorials</h2>
+                        <h3><a id="editorial"></a>Editorials</h3>
                         <div class="entry">
                             <p>To date, I have edited two special issues.</p>
-                            <h3>Publications</h3>
+                            <h4>Publications</h4>
                             <ol reversed type="1">
                                 <li>Jia Li, <b>Shuozhi Xu</b>, Mohsen Asle Zaeem, <a href="http://dx.doi.org/10.3389/fmats.2022.942523"><i>Editorial: Modeling and simulation of the mechanical behavior of multi-principal element materials</i></a>, Front. Mater. 9 (2022) 942523 [<a href="publications/editorial/li_mpem_fm.2022.pdf">PDF</a>]</li>
                                 <li><b>Shuozhi Xu</b>, Marat I. Latypov, Jaafar A. El-Awady, Irene J. Beyerlein, <a href="http://dx.doi.org/110.1557/jmr.2019.230"><i>Intrinsic and extrinsic size effects in materials</i></a>, J. Mater. Res. 34 (2019) 2147 [<a href="publications/editorial/xu_size.effect_jmr.2019.pdf">PDF</a>]</li>
