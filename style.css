@@ -7,6 +7,14 @@ Released for free under a Creative Commons Attribution 3.0 License
 
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
 
+.container {
+  display: flex;
+}
+
+.float-left {
+	flex: 1;
+}
+
 body {
 	margin: 0 auto;
 	padding: 0 auto;
